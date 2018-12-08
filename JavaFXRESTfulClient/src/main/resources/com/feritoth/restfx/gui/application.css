@@ -1,0 +1,26 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root{ /* Styling of all application elements */
+	-fx-background-color: #383838; /* The background color */
+	/*-fx-font-size: 10pt;*/
+}
+
+.label{
+	/* The label styling section */
+	-fx-text-fill: #E8E8E8; /* The text color */
+}
+
+.button-red{ /* The first button styling section */
+	-fx-background-color: #AB4642; /* The background color */
+	-fx-text-fill: #FFFFFF; /* The text color */
+	-fx-background-radius: 4; /* The button rounding attribute */
+	/*-fx-background-color: linear-gradient(#DC9656, #AB4642);*/
+}
+.button-blue{ /* The second button styling section */
+	-fx-background-color: #7CAFC2; /* The background color */
+	-fx-text-fill: #FFFFFF; /* The text color */
+	-fx-background-radius: 4; /* The button rounding attribute */
+	/*-fx-background-color: linear-gradient(#DC9656, #AB4642);*/
+}
+#bold-label{
+	-fx-font-weight: bold;
+}
