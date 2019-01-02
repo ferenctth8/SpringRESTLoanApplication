@@ -141,7 +141,10 @@ public class MainScene extends Application {
 				mainWindow.setTitle("JavaFX RESTful client - Administrator Profile");
 				mainWindow.setResizable(true);
 				/* Get the return button from the previous frame and attach to it a listener */
-				((AdminScene) adminScene).getReturnButton().setOnAction(ae -> mainWindow.setScene(mainScene));
+				((AdminScene) adminScene).getReturnButton().setOnAction(ae -> {
+					mainWindow.setTitle("Java FX RESTful client - main frame");
+					mainWindow.setScene(mainScene);
+				});
 			}
 		});
 
@@ -182,7 +185,10 @@ public class MainScene extends Application {
 					mainWindow.setTitle("JavaFX RESTful client - Personal profile of " + selectedClient.getName());
 					mainWindow.setResizable(true);
 					/* Get the return button from the previous frame and attach to it a listener */
-					((ClientScene) clientScene).getReturnButton().setOnAction(ae -> mainWindow.setScene(mainScene));
+					((ClientScene) clientScene).getReturnButton().setOnAction(ae -> {
+						mainWindow.setScene(mainScene);
+						mainWindow.setTitle("Java FX RESTful client - main frame");
+					});
 				}
 			}
 		});

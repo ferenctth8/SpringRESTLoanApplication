@@ -81,11 +81,18 @@ public class LoanRESTDispatcher {
 			/* In this case, return a message with the newly created location for the inserted loan */
 			String responseObject = (String) serviceResponse.getBody();
 			URI registrationURI = URI.create(responseObject);
-			LOGGER.info("The new IP address has been registered under the following location:" + REST_SERVICE_URI + registrationURI);
+			LOGGER.info("The new loan has been registered under the following location:" + REST_SERVICE_URI + registrationURI);
 			/* Send the e-mail confirming the registration of the given IP address */
+			/* Add these extra values to the current loan before being sent out via e-mail */
+			newLoan.setExtended(false);
+			newLoan.setInterestRate(newLoan.getLoanedAmount() / 10);
+			newLoan.setExtensionCount(0L);
+			String registrationString = registrationURI.toString();
+			newLoan.setLoanID(Integer.valueOf(registrationString.substring(registrationString.length()-3, registrationString.length()-1)));
+			/* Next create the e-mail message to be transmitted */
 			String firstMessageSection = newLoan.toString() + "\n";
 			String secondMessageSection = "Dear " + newLoan.getIpAddress().getOwnerClient().getName() + ",\n You have successfully registered a new loan under the following location:" + REST_SERVICE_URI + registrationURI;
-			EmailConfirmationSender.sendConfirmationEmail("New Loan Registration", secondMessageSection + firstMessageSection);
+			EmailConfirmationSender.sendConfirmationEmail("New Loan Registration", secondMessageSection + " " + firstMessageSection);
 			/* Return the given URI at the end of the operation */
 			return registrationURI;
 		}

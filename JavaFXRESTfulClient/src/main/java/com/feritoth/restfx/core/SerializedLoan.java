@@ -3,6 +3,7 @@ package com.feritoth.restfx.core;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -120,7 +121,9 @@ public class SerializedLoan implements Serializable {
 
 	@Override
 	public String toString() {
-		return "SerializedLoan [loanID=" + loanID + ", applicationTime=" + applicationTime + ", returnDate=" + returnDate + ", loanedAmount=" + loanedAmount +
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+		String loanApplicationTime = applicationTime.format(formatter);
+		return "SerializedLoan [loanID=" + loanID + ", applicationTime=" + loanApplicationTime + ", returnDate=" + returnDate + ", loanedAmount=" + loanedAmount +
 			   ", currency=" + currency + ", isExtended=" + isExtended + ", interestRate=" + interestRate + ", extensionCount=" + extensionCount + "]";
 	}
 
