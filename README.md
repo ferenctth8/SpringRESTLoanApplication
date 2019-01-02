@@ -22,4 +22,4 @@ in this are consumed - this is Java desktop client created using the Java FX tec
 
 In order to use the current application, first the back-end part will need to be deployed on a web server (ideally it could be a Tomcat server as this will allow as a bonus facility the automated deployment using a Maven-Tomcat plugin).
 
-Next the front-end will be possible to be start as a normal Java desktop application - here the user is encouraged to import the application into an IDE where the Java FX facility is incorporated.
+Next the front-end will be possible to start as a normal Java desktop application - here the user is encouraged to import the application into an IDE where the Java FX facility is incorporated.
