@@ -21,7 +21,7 @@
 		<poi-version>3.17</poi-version>
 		<itextpdf-version>5.5.11</itextpdf-version>
 		<gmail-api-version>v1-rev91-1.23.0</gmail-api-version>
-		<gmail.version>1.23.0</gmail.version>
+		<gmail.version>1.32.1</gmail.version>
 		<javax.mail-version>1.6.1</javax.mail-version>
 	</properties>
 
