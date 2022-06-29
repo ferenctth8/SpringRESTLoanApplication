@@ -18,7 +18,7 @@
 		<jackson.library>2.12.6.1</jackson.library>
 		<codec.version>1.10</codec.version>
 		<apache-commons.version>4.1</apache-commons.version>
-		<poi-version>3.17</poi-version>
+		<poi-version>4.1.1</poi-version>
 		<itextpdf-version>5.5.11</itextpdf-version>
 		<gmail-api-version>v1-rev91-1.23.0</gmail-api-version>
 		<gmail.version>1.33.3</gmail.version>
