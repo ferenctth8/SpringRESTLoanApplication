@@ -19,7 +19,7 @@
 		<codec.version>1.10</codec.version>
 		<apache-commons.version>4.1</apache-commons.version>
 		<poi-version>4.1.1</poi-version>
-		<itextpdf-version>5.5.11</itextpdf-version>
+		<itextpdf-version>5.5.12</itextpdf-version>
 		<gmail-api-version>v1-rev91-1.23.0</gmail-api-version>
 		<gmail.version>1.33.3</gmail.version>
 		<javax.mail-version>1.6.1</javax.mail-version>
