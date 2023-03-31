@@ -13,7 +13,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<springframework.version>6.0.7</springframework.version>
 		<springsecurity.version>5.2.10.RELEASE</springsecurity.version>
-		<jackson.library>2.13.4.1</jackson.library>
+		<jackson.library>2.13.4.2</jackson.library>
 		<hibernate.version>5.4.24.Final</hibernate.version>
 		<mysql.connector.version>8.0.28</mysql.connector.version>
 		<joda-time.version>2.3</joda-time.version>
