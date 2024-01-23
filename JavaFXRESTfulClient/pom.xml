@@ -13,7 +13,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<stringutils.version>3.5</stringutils.version>
-		<springframework.version>6.0.14</springframework.version>
+		<springframework.version>6.0.15</springframework.version>
 		<slf4j.version>1.5.6</slf4j.version>
 		<jackson.library>2.13.4.2</jackson.library>
 		<codec.version>1.10</codec.version>
